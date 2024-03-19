@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>	
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+      />
+      <script defer src="app.js"></script>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <div class="back-image">
+      <main>
+        <header class="main-header">
+          <div class="header-wrap">
+            <h1>Social Media Dashboard</h1>
+            <p class="text-followers">Total Followers: 23,004</p>
+          </div>
+          <div class="theme-switch | flex">Dark mode
+            <label id="switch" class="switch">
+              <input type="checkbox" onchange="toggleTheme()" id="slider" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </header>
+        <!------------------------------main grid------------------------------------->
+        <div class="main-wrapper grid">
+          <div class="main-card main-card-color-1" data-border-color="blue">
+            <h3 class="FB">@nathanf</h3>
+            <p class="main-number">1987</p>
+            <p class="number-description">Followers</p>
+            <p data-color="green" class="stats">12 Today</p>
+          </div>
+          <div class="main-card main-card-color-2" data-border-color="pale-blue">
+            <h3 class="twiter">@nathanf</h3>
+            <p class="main-number">1044</p>
+            <p class="number-description">Followers</p>
+            <p data-color="green" class="stats">99 Today</p>
+          </div>
+          <div class="main-card main-card-color-3" data-border-color="orange">
+            <h3 class="IG">@realnathanf</h3>
+            <p class="main-number">11k</p>
+            <p class="number-description">Followers</p>
+            <p data-color="green" class="stats">1099 Today</p>
+          </div>
+          <div class="main-card main-card-color-4">
+            <h3 class="YT">Nathan F.</h3>
+            <p class="main-number">8239</p>
+            <p class="number-description">Subscribers</p>
+            <p data-color="red" class="stats negative">144 Today</p>
+          </div>
+        </div>
+        <!------------------------------OVERVIEW------------------------------------------>
+        <header class="second-header">
+          <h2>Overview - Today</h2>
+        </header>
+        <div class="second-wrapper | sub-grid">
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Page Views</p>
+            <img
+              src="images/icon-facebook.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">87</p>
+            <p class="percentage grid-item pd-inline-end" data-color="green">
+              3%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Likes</p>
+            <img
+              src="images/icon-facebook.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">52</p>
+            <p
+              class="percentage-negative grid-item pd-inline-end"
+              data-color="red"
+            >
+              2%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Likes</p>
+            <img
+              src="images/icon-instagram.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">5462</p>
+            <p class="percentage grid-item pd-inline-end" data-color="green">
+              2257%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">
+              Profile Views
+            </p>
+            <img
+              src="images/icon-instagram.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">52k</p>
+            <p class="percentage grid-item pd-inline-end" data-color="green">
+              1375%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Retweets</p>
+            <img
+              src="images/icon-twitter.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">117</p>
+            <p class="percentage grid-item pd-inline-end" data-color="green">
+              303%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Likes</p>
+            <img
+              src="images/icon-twitter.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">507</p>
+            <p class="percentage grid-item pd-inline-end" data-color="green">
+              553%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">Likes</p>
+            <img
+              src="images/icon-youtube.svg"
+              alt=""
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">107</p>
+            <p
+              class="percentage-negative grid-item pd-inline-end"
+              data-color="red"
+            >
+              19%
+            </p>
+          </div>
+          <div class="mini-card">
+            <p class="grid-item pd-inline-start second-nuber-label">
+              Total Views
+            </p>
+            <img
+              src="images/icon-youtube.svg"
+              alt="penis"
+              class="grid-item pd-inline-end"
+            />
+            <p class="second-number grid-item pd-inline-start">1407</p>
+            <p
+              class="percentage-negative grid-item pd-inline-end"
+              data-color="red"
+            >
+              12%
+            </p>
+          </div>
+        </div>
+      </main>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jakub Kontra</a>.
+      </div>
+    </div>
+  </body>
+</html>
